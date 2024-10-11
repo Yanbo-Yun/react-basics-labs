@@ -7,6 +7,7 @@ const Task = (props) => {
             <p className="title">{props.title}</p>
             <p>Due: {props.deadline}</p>
             <p><i>{props.description}</i></p>
+            <p>Priority: <strong>{props.priority}</strong></p>
             <button onClick={props.markDone} className='doneButton'>Done</button>
             <button className='deleteButton' onClick={props.deleteTask}>Delete</button>
         </div>
